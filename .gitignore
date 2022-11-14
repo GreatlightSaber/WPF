@@ -1,0 +1,9 @@
+# EpicGames_Launcher/EpciGames_Launcher/.vs/*
+
+# Lizard_Launcher/Lizard_Launcher/.vs/*
+
+# RockstarGame_Launcher/Practice_Rockstar_Game_Launcher/.vs/*
+
+*/**/.vs/*
+
+*/**/bin/*
