@@ -24,5 +24,19 @@ namespace EpciGames_Launcher.Pages
         {
             InitializeComponent();
         }
+
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            if ((Application.Current.MainWindow != null))
+                ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(
+                    new Uri("../Pages/PreparingToLaunchStore.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void ButtonBase_Click(object sender, RoutedEventArgs e)
+        {
+            if ((Application.Current.MainWindow != null))
+                ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(
+                    new Uri("../Pages/SettingPage.xaml", UriKind.RelativeOrAbsolute));
+        }
     }
 }
