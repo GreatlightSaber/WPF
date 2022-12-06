@@ -19,10 +19,10 @@ namespace EpciGames_Launcher.Pages
     /// <summary>
     /// Page1.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class Page1 : Page
+    public partial class PreparingToLaunchStore : Page
     {
         readonly DispatcherTimer _dispatcherTimer = new DispatcherTimer();
-        public Page1()
+        public PreparingToLaunchStore()
         {
             InitializeComponent();
             _dispatcherTimer.Tick += _dispatcherTimer_Tick;
@@ -38,6 +38,7 @@ namespace EpciGames_Launcher.Pages
             _dispatcherTimer.Tick += _dispatherTimer_Tick1;
             _dispatcherTimer.Stop();
             _dispatcherTimer.Interval = new TimeSpan(0, 0, 5);
+            _dispatcherTimer.Start();
         }
 
         private void _dispatherTimer_Tick1(object sender, EventArgs e)

@@ -114,4 +114,35 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+    <Style
+        TargetType="{x:Type Button}"
+        x:Key="PrimaryButtonStyle">
+        <Setter Property="Background" Value="{StaticResource PrimaryButtonBackgroundBrush}"/>
+        <Setter Property="Height" Value="35"/>
+        <Setter Property="Width" Value="68"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="Brutal Type"/>
+        <Setter Property="Foreground" Value="{StaticResource CaptionFontBrush}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        CornerRadius="2">
+                        <ContentPresenter
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{StaticResource PrimaryButtonMouseOverBackgroundBrush}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
 </ResourceDictionary>
