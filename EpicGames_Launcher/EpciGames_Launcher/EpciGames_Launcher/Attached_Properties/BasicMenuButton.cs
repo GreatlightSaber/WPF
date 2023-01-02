@@ -9,9 +9,8 @@ using System.Windows.Media;
 
 namespace EpciGames_Launcher.Attached_Properties
 {
-    class LoginServiceButtons: Button
+    class BasicMenuButton : Button
     {
-
 
         public double IconHeight
         {
@@ -21,7 +20,7 @@ namespace EpciGames_Launcher.Attached_Properties
 
         // Using a DependencyProperty as the backing store for IconHeight.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty IconHeightProperty =
-            DependencyProperty.Register("IconHeight", typeof(double), typeof(LoginServiceButtons));
+            DependencyProperty.Register("IconHeight", typeof(double), typeof(BasicMenuButton));
 
 
 
@@ -33,7 +32,7 @@ namespace EpciGames_Launcher.Attached_Properties
 
         // Using a DependencyProperty as the backing store for IconWidth.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty IconWidthProperty =
-            DependencyProperty.Register("IconWidth", typeof(double), typeof(LoginServiceButtons));
+            DependencyProperty.Register("IconWidth", typeof(double), typeof(BasicMenuButton));
 
 
 
@@ -45,7 +44,7 @@ namespace EpciGames_Launcher.Attached_Properties
 
         // Using a DependencyProperty as the backing store for Icon.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty IconProperty =
-            DependencyProperty.Register("Icon", typeof(PathGeometry), typeof(LoginServiceButtons));
+            DependencyProperty.Register("Icon", typeof(PathGeometry), typeof(BasicMenuButton));
 
 
 
@@ -57,7 +56,7 @@ namespace EpciGames_Launcher.Attached_Properties
 
         // Using a DependencyProperty as the backing store for ImageIcon.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ImageIconProperty =
-            DependencyProperty.Register("ImageIcon", typeof(ImageSource), typeof(LoginServiceButtons));
+            DependencyProperty.Register("ImageIcon", typeof(ImageSource), typeof(BasicMenuButton));
 
 
 
@@ -69,7 +68,7 @@ namespace EpciGames_Launcher.Attached_Properties
 
         // Using a DependencyProperty as the backing store for IconFill.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty IconFillProperty =
-            DependencyProperty.Register("IconFill", typeof(Brush), typeof(LoginServiceButtons));
+            DependencyProperty.Register("IconFill", typeof(Brush), typeof(BasicMenuButton));
 
 
 
@@ -81,7 +80,7 @@ namespace EpciGames_Launcher.Attached_Properties
 
         // Using a DependencyProperty as the backing store for IconFillOnHover.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty IconFillOnHoverProperty =
-            DependencyProperty.Register("IconFillOnHover", typeof(Brush), typeof(LoginServiceButtons));
+            DependencyProperty.Register("IconFillOnHover", typeof(Brush), typeof(BasicMenuButton));
 
 
 
@@ -93,7 +92,7 @@ namespace EpciGames_Launcher.Attached_Properties
 
         // Using a DependencyProperty as the backing store for IconBackground.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty IconBackgroundProperty =
-            DependencyProperty.Register("IconBackground", typeof(Brush), typeof(LoginServiceButtons));
+            DependencyProperty.Register("IconBackground", typeof(Brush), typeof(BasicMenuButton));
 
 
 
@@ -105,9 +104,6 @@ namespace EpciGames_Launcher.Attached_Properties
 
         // Using a DependencyProperty as the backing store for IconBackgroundHover.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty IconBackgroundHoverProperty =
-            DependencyProperty.Register("IconBackgroundHover", typeof(Brush), typeof(LoginServiceButtons));
-
-
-
+            DependencyProperty.Register("IconBackgroundHover", typeof(Brush), typeof(BasicMenuButton));
     }
 }
